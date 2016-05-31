@@ -1,14 +1,12 @@
 const $ = require( 'jquery' );
 
 
-module.exports = function animScrollTo( el, _duration, _padding ) {
+module.exports = function animScrollTo( el, duration = 250, padding = 50 ) {
 
 	const dfd          = $.Deferred();
 	const $htmlAndBody = $( 'html, body' );
 
 	let offset = el;
-	const duration = typeof _duration === 'undefined' ? 250 : _duration;
-	const padding  = typeof _padding === 'undefined' ? 50 : _padding;
 
 	if ( typeof el !== 'number' ) {
 		if ( !$( el ).length ) {
