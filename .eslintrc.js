@@ -9,5 +9,7 @@ module.exports = {
 
 	globals :  {},
 
-	rules : {},
+	rules : {
+		'no-param-reassign': 0,
+	},
 };

@@ -24,7 +24,7 @@ module.exports = function animScrollTo( el, duration = 250, padding = 50 ) {
 
 	$htmlAndBody.animate({
 		scrollTop : offset
-	}, duration, function (  ) {
+	}, duration, (  ) => {
 		dfd.resolve();
 	});
 
