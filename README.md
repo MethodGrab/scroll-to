@@ -7,7 +7,7 @@ A wrapper around `jQuery.animate()` to scroll the page to a specific element.
 ```js
 const scroll2 = require( 'scroll-to' );
 
-$( '.btn' )on( 'click', function( e ) {
+$( '.btn' ).on( 'click', function( e ) {
 	scroll2( '.some-element' );
 });
 ```
