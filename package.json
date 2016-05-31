@@ -1,0 +1,15 @@
+{
+  "name": "scroll-to",
+  "version": "0.1.0",
+  "description": "A wrapper around `jQuery.animate()` to scroll the page to a specific element.",
+  "main": "scroll-to.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "MethodGrab",
+  "license": "MIT",
+  "devDependencies": {
+    "@methodgrab/eslint-config-standard": "^0.8.0"
+  }
+}
