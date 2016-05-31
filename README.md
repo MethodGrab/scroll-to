@@ -14,7 +14,7 @@ $( '.btn' ).on( 'click', function( e ) {
 
 
 ## API
-`scrollTo( selector, duration, padding )`
+`scroll2( selector, duration, padding )`
 
 ### `selector`
 The CSS selector of an element.
