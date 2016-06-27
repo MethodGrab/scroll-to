@@ -5,9 +5,10 @@ module.exports = {
 		'@methodgrab/standard/es2015',
 	],
 
-	env : {},
-
-	globals :  {},
+	globals: {
+		'jQuery' : true,
+		'$'      : true,
+	},
 
 	rules : {
 		'no-param-reassign': 0,

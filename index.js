@@ -1,10 +1,16 @@
-const $ = require( 'jquery' );
+// const $ = require( 'jquery' );
+
+let $root;
 
 
-module.exports = function animScrollTo( el, duration = 250, padding = 50 ) {
+// :: ( el: string, opts: { duration: number, padding: number, altOffsetCalc: bool } ) → Promise
+module.exports = ( el, { duration = 250, padding = 50, altOffsetCalc = false } = {} ) => {
 
-	const dfd          = $.Deferred();
-	const $htmlAndBody = $( 'html, body' );
+	const dfd = $.Deferred();
+
+	if ( !$root ) {
+		$root = $( 'html, body' );
+	}
 
 	let offset = el;
 
@@ -14,15 +20,17 @@ module.exports = function animScrollTo( el, duration = 250, padding = 50 ) {
 			return dfd.resolve();
 		}
 
-		offset = $( el ).offset().top;
+		if ( altOffsetCalc ) {
+			offset = findYPosition( $( el )[0] );
+		} else {
+			offset = $( el ).offset().top;
+		}
 
-		// alternative offset calculation method
-		// offset = findYPosition( $( el )[0] );
-
-		offset = offset - padding;
 	}
 
-	$htmlAndBody.animate({
+	offset = offset - padding;
+
+	$root.animate({
 		scrollTop : offset
 	}, duration, (  ) => {
 		dfd.resolve();
