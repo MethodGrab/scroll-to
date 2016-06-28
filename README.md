@@ -1,16 +1,16 @@
 # Scroll To
-> A wrapper around `jQuery.animate()` to scroll the page to a specific element.
+> A wrapper around `jQuery.animate({ scrollTop: offset })` to scroll the page to a specific element.
 
 
 ## Install
 ```bash
-npm install --save MethodGrab/scroll-to
+npm install --save @methodgrab/scroll-to
 ```
 
 
 ## Examples:
 ```js
-const scroll2 = require( 'scroll-to' );
+const scroll2 = require( '@methodgrab/scroll-to' );
 
 $( '.btn' ).on( 'click', function( e ) {
 	scroll2( '.some-element' );
@@ -18,20 +18,18 @@ $( '.btn' ).on( 'click', function( e ) {
 ```
 
 ```js
-const scroll2 = require( 'scroll-to' );
+const scroll2 = require( '@methodgrab/scroll-to' );
 
 $( '.btn' ).on( 'click', function( e ) {
-	scroll2( '.some-element', { duration: 1000, padding: 5 } );
-	.then((  ) => {
-		console.log( 'Done!' );
-	})
+	scroll2( '.some-element', { duration: 1000, padding: 5 } )
+	.then( () => console.log( 'Done!' ) );
 });
 ```
 
 
 ## API
 `scroll2( selector, { duration, padding } )`  
-Returns a Promise that resolves when the scroll completes
+Returns a `Promise` that resolves when the scroll completes
 
 ### `selector`
 `String`  

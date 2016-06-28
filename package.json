@@ -1,7 +1,7 @@
 {
   "name": "@methodgrab/scroll-to",
   "version": "0.1.0",
-  "description": "A wrapper around `jQuery.animate()` to scroll the page to a specific element",
+  "description": "A wrapper around `jQuery.animate({ scrollTop: offset })` to scroll the page to a specific element",
   "license": "MIT",
   "repository": "MethodGrab/scroll-to",
   "author": "MethodGrab",
