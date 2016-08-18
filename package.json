@@ -15,6 +15,7 @@
     "build": "browserify index.js --standalone scroll2 -t babelify --outfile dist/scroll-to.js"
   },
   "main": "index.js",
+  "browser": "dist/scroll-to.js",
   "files": [
     "index.js",
     "dist/scroll-to.js"
