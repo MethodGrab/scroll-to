@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "test": "npm run lint && ava",
-    "lint": "eslint *.js",
+    "lint": "eslint \"*.js\"",
     "build": "browserify index.js --standalone scroll2 -t babelify --outfile dist/scroll-to.js"
   },
   "main": "index.js",
