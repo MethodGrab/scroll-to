@@ -1,4 +1,4 @@
-# Scroll To [![Build Status](https://travis-ci.org/MethodGrab/scroll-to.svg?branch=master)](https://travis-ci.org/MethodGrab/scroll-to)
+# Scroll To [![Build Status](https://travis-ci.org/MethodGrab/scroll-to.svg?branch=master)](https://travis-ci.org/MethodGrab/scroll-to) [![npm](https://img.shields.io/npm/v/@methodgrab/scroll-to.svg)](https://www.npmjs.com/package/@methodgrab/scroll-to)
 > A wrapper around `jQuery.animate({ scrollTop: offset })` to scroll the page to a specific element.
 
 
