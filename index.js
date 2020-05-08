@@ -31,7 +31,7 @@ module.exports = ( el, { duration = 250, padding = 50, altOffsetCalc = false } =
 	offset = offset - padding;
 
 	$root.animate({
-		scrollTop : offset
+		scrollTop : offset,
 	}, duration, (  ) => {
 		dfd.resolve();
 	});
